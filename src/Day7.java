@@ -4,7 +4,9 @@ import java.util.stream.Collectors;
 
 public class Day7 extends DAY {
     public static void main(String[] args) {
-        List<Integer> input = Arrays.stream(readFromResFile("Day7-test.txt").get(0).split(","))
+        
+
+        List<Integer> input = Arrays.stream(readFromResFile("Day7.txt").get(0).split(","))
                 .map((String s) -> Integer.parseInt(s.replaceAll(" ", "")))
                 .collect(Collectors.toList());
 
